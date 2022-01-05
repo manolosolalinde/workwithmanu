@@ -1,0 +1,57 @@
+img {
+    max-width: 100%;
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+div[class*='ImageContainer'] {
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    div[class*='ImageContainer'] img {
+        min-height: auto;
+    }
+}
+    
+
+
+div[class*='ProjectBody'] img:not(img[style]) {
+
+    width: 80vw;
+    max-width: 1200px;
+
+    position: relative;
+    left: calc(max(-600px, -40vw) + 50%);
+
+
+
+}
+
+.gatsby-highlight {
+    width: 80vw;
+    max-width: 900px;
+
+    position: relative;
+    left: calc(max(-450px, -40vw) + 50%);
+}
+
+div[class*='ProjectBody'] h2 {
+    text-align: center;
+}
+
+li .gatsby-highlight {
+    width: auto;
+    position: inherit;
+}
+
+
+.fw-btn--text:hover {
+    background-color: pink !important;
+    border-color: var(--btn-link-bg);
+}
