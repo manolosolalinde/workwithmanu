@@ -1,7 +1,7 @@
 //import dotenv enviroment variable CV_GITHUB_TOKEN
 require('dotenv').config()
 
-const CV_GITHUB_TOKEN = process.env.CV_GITHUB_TOKEN
+const CV_REPO_TOKEN = process.env.CV_REPO_TOKEN
 const GITHUB_CV_REPOSITORY = process.env.GITHUB_CV_REPOSITORY
 const GITHUB_CV_USERNAME = process.env.GITHUB_CV_USERNAME
 const PRISMIC_REPOSITORY_NAME = process.env.PRISMIC_REPOSITORY_NAME
