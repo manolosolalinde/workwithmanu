@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-prismic-starter-prist",
+  "name": "workwithmanu",
   "private": true,
-  "description": "A starter powered by Gatsby and Prismic to showcase portfolios and blogs.",
-  "version": "0.1.0",
-  "author": "Marguerite Roth | marguerite.io | marguerite.roth@gmail.com",
+  "description": "Nestor M. Solalinde's portfolio.",
+  "version": "0.1.1",
+  "author": "Nestor Solalinde |  manolosolalinde@gmail.com",
+  "node_version": "==14",
   "resolutions": {
     "remark-mdx": "2.0.0-next.9"
   },
@@ -25,11 +26,10 @@
     "gatsby-plugin-sharp": "^2.2.25",
     "gatsby-remark-prismjs": "^3.13.0",
     "gatsby-source-filesystem": "^2.1.26",
-    "gatsby-source-graphql-universal": "^3.3.0",
+    "gatsby-source-graphql-universal": "3.2",
     "gatsby-source-prismic-graphql": "3.4.0-beta.1",
     "gatsby-transformer-remark": "^2.16.1",
     "gatsby-transformer-sharp": "^2.2.16",
-    "node-sass": "^4.12.0",
     "prismic-reactjs": "^1.1.1",
     "prismjs": "^1.25.0",
     "prop-types": "^15.7.2",
@@ -44,7 +44,10 @@
     "react-router-dom": "^5.0.0",
     "react-router-hash-link": "^1.2.1",
     "remark-mdx": "^2.0.0-next.9",
-    "smooth-scroll": "^16.0.3"
+    "sass": "^1.46.0",
+    "sass-loader": "^10.2.0",
+    "smooth-scroll": "^16.0.3",
+    "webpack": "^4.19.1"
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.0.11",
