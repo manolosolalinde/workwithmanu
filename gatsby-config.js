@@ -1,3 +1,14 @@
+//import dotenv enviroment variable CV_GITHUB_TOKEN
+require('dotenv').config()
+
+const CV_GITHUB_TOKEN = process.env.CV_GITHUB_TOKEN
+const GITHUB_CV_REPOSITORY = process.env.GITHUB_CV_REPOSITORY
+const GITHUB_CV_USERNAME = process.env.GITHUB_CV_USERNAME
+const PRISMIC_REPOSITORY_NAME = process.env.PRISMIC_REPOSITORY_NAME
+const YOUR_GOOGLE_ANALYTICS_TRACKING_ID = process.env.YOUR_GOOGLE_ANALYTICS_TRACKING_ID
+
+
+
 module.exports = {
   siteMetadata: {
     title: `Nestor Solalinde's Portfolio`,
@@ -8,12 +19,12 @@ module.exports = {
     {
       resolve: `@mosch/gatsby-source-github`,
       options: {           
-        repository: "cv",
+        repository: GITHUB_CV_REPOSITORY,
         tree: true,
         releases: true,
-        user: "manolosolalinde",
+        user: GITHUB_CV_USERNAME,
         secrets: {
-          token: "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",
+          token: CV_GITHUB_TOKEN,
         }
       }
     },
@@ -54,7 +65,7 @@ module.exports = {
     {
         resolve: 'gatsby-source-prismic-graphql',
         options: {
-            repositoryName: 'workwithnestor', // (REQUIRED, replace with your own)
+            repositoryName: PRISMIC_REPOSITORY_NAME, // (REQUIRED, replace with your own)
             linkResolver: () => post => `/${post.uid}`,
         }
     },
@@ -74,7 +85,7 @@ module.exports = {
     {
         resolve: `gatsby-plugin-google-analytics`,
         options: {
-            trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+            trackingId: YOUR_GOOGLE_ANALYTICS_TRACKING_ID,
             head: true,
         },
     },
