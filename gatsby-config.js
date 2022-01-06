@@ -24,7 +24,7 @@ module.exports = {
         releases: true,
         user: GITHUB_CV_USERNAME,
         secrets: {
-          token: CV_GITHUB_TOKEN,
+          token: CV_REPO_TOKEN,
         }
       }
     },

@@ -169,7 +169,7 @@ const ProjectCardImageContainer = styled("div")`
         // }
 
 const ProjectCard = ({ category, title, description, thumbnail, uid,redirect_link,relativeDirectory='projects'}) => (
-    <ProjectCardContainer to={redirect_link?redirect_link:`/${relativeDirectory}/${uid}`}>
+    <ProjectCardContainer to={redirect_link?redirect_link:`/${relativeDirectory}/${uid}`} target={redirect_link?"_blank":null}>
         <ProjectCardContent className="ProjectCardContent">
             <ProjectCardCategory>
                 {category[0].text}
