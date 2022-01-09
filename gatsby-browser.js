@@ -15,3 +15,7 @@ require("prismjs/themes/prism-okaidia.css");
 
 // npm install gatsby-remark-prismjs prismjs
 
+const { registerLinkResolver } = require('@prismicio/gatsby-source-prismic-graphql');
+const { linkResolver } = require('./src/utils/linkResolver');
+ 
+registerLinkResolver(linkResolver);

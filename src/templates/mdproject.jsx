@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import styled from "@emotion/styled";
 import colors from "styles/colors";
 import { Link, graphql, withPrefix } from 'gatsby';
@@ -152,9 +152,9 @@ const Project = ({ project, meta }) => {
         var style = document.createElement('style')
         style.innerHTML = '.fw-btn--text { background-color: red; }'
         var hosts = document.getElementsByTagName('fw-button');
-        
+
         async function loadTagColors() {
-        
+
             for (var i = 0; i < hosts.length; i++) {
                 var host = hosts[i];
                 var sheet = new CSSStyleSheet

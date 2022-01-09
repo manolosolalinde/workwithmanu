@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import { RichText } from "prismic-reactjs";
 import { graphql, Link } from "gatsby";
 import styled from "@emotion/styled";
@@ -172,17 +172,17 @@ const RenderBody = ({ home, projects, meta }) => {
                     const image_url_global = image_url ? image_url.replace(/(\.\/)/g, `${baseUrl}`) : null;
                     const project_thumbnail = { url: image_url_global, alt: title };
                     return ( */}
-                        <ProjectCard
-                            relativeDirectory={project.relativeDirectory}
-                            key={i}
-                            category={project_category}
-                            title={project_title}
-                            description={project_description}
-                            thumbnail={project_thumbnail}
-                            uid={uid}
-                        />
-                
-                
+                <ProjectCard
+                    relativeDirectory={project.relativeDirectory}
+                    key={i}
+                    category={project_category}
+                    title={project_title}
+                    description={project_description}
+                    thumbnail={project_thumbnail}
+                    uid={uid}
+                />
+
+
                 {/* <ProjectCard
                 key={i}
                 category={project.node.project_category}

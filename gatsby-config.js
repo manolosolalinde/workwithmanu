@@ -1,11 +1,11 @@
 //import dotenv enviroment variable CV_GITHUB_TOKEN
 require('dotenv').config()
 
-const CV_REPO_TOKEN = process.env.CV_REPO_TOKEN
-const GITHUB_CV_REPOSITORY = process.env.GITHUB_CV_REPOSITORY
-const GITHUB_CV_USERNAME = process.env.GITHUB_CV_USERNAME
-const PRISMIC_REPOSITORY_NAME = process.env.PRISMIC_REPOSITORY_NAME
-const YOUR_GOOGLE_ANALYTICS_TRACKING_ID = process.env.YOUR_GOOGLE_ANALYTICS_TRACKING_ID
+const CV_REPO_TOKEN = process.env.CV_REPO_TOKEN.replace(/\r?\n|\r/g, '')
+const GITHUB_CV_REPOSITORY = process.env.GITHUB_CV_REPOSITORY.replace(/\r?\n|\r/g, '')
+const GITHUB_CV_USERNAME = process.env.GITHUB_CV_USERNAME.replace(/\r?\n|\r/g, '')
+const PRISMIC_REPOSITORY_NAME = process.env.PRISMIC_REPOSITORY_NAME.replace(/\r?\n|\r/g, '')
+const YOUR_GOOGLE_ANALYTICS_TRACKING_ID = process.env.YOUR_GOOGLE_ANALYTICS_TRACKING_ID.replace(/\r?\n|\r/g, '')
 
 
 
@@ -63,8 +63,9 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-        resolve: 'gatsby-source-prismic-graphql',
+        resolve: '@prismicio/gatsby-source-prismic-graphql',
         options: {
+            omitPrismicScript: true,
             repositoryName: PRISMIC_REPOSITORY_NAME, // (REQUIRED, replace with your own)
             linkResolver: () => post => `/${post.uid}`,
         }

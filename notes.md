@@ -1,3 +1,7 @@
+## Important changes of this branch
+
+Replaced `gatsby-source-prismic-graphql` by `@prismicio/gatsby-source-prismic-graphql`
+
 removed from package.json:
 ```json
 "node-sass"
@@ -9,18 +13,21 @@ replaced with:
 "sass-loader"
 ```
 
-
 added to package.json:
 ```json
 "webpack": webpack@4.19.1
 //because webpack@5.11.0 was not working
 ```
 
-downgraded:
-```json
-"gatsby-source-graphql-universal": "^3.2.0"
-// from 3.3.0 to 3.2.0 to solve the following error:
-// Error: Cannot find module './third-party/gatsby-node'
+## How to install different versions of nodejs
+
+Install node 12:
+```
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 ```
 
+Install node 14:
+```
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+```
 
