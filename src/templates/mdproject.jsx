@@ -178,7 +178,7 @@ const Project = ({ project, meta }) => {
     return (
         <>
             <Helmet
-                title={`${project_title[0].text} | Work with Nestor`}
+                title={`${project_title[0].text} | Work with Manuel`}
                 titleTemplate={`%s | ${meta.title}`}
                 meta={[
                     {
@@ -187,7 +187,7 @@ const Project = ({ project, meta }) => {
                     },
                     {
                         property: `og:title`,
-                        content: `${project_title[0].text} | Work with Nestor`,
+                        content: `${project_title[0].text} | Work with Manuel`,
                     },
                     {
                         property: `og:description`,
@@ -243,7 +243,7 @@ const Project = ({ project, meta }) => {
                         {/* <UnderImageContainer> */}
                         <div className={styles.underImage}>
                             <div className={styles.underImageName}>
-                                Nestor Solalinde
+                                Manuel Solalinde
                             </div>
                             <div className={styles.underImageDate}>
                                 <Moment format="MMMM D, YYYY">{date}</Moment>

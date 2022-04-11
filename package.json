@@ -1,9 +1,9 @@
 {
   "name": "workwithmanu",
   "private": true,
-  "description": "Nestor M. Solalinde's portfolio.",
+  "description": "Manuel Solalinde's portfolio.",
   "version": "0.1.1",
-  "author": "Nestor Solalinde |  manolosolalinde@gmail.com",
+  "author": "Manuel Solalinde |  manolosolalinde@gmail.com",
   "node_version": "==14",
   "resolutions": {
     "remark-mdx": "2.0.0-next.9",

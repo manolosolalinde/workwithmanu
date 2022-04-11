@@ -31,3 +31,5 @@ Install node 14:
 curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 ```
 
+Check wsl or wsl 2 version:
+```

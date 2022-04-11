@@ -11,9 +11,9 @@ const YOUR_GOOGLE_ANALYTICS_TRACKING_ID = process.env.YOUR_GOOGLE_ANALYTICS_TRAC
 
 module.exports = {
   siteMetadata: {
-    title: `Nestor Solalinde's Portfolio`,
-        description: `Nestor Solalinde's Portfolio and Featured Projects`,
-    author: `Nestor M. Solalinde`,
+    title: `Manuel Solalinde's Portfolio`,
+        description: `Manuel Solalinde's Portfolio and Featured Projects`,
+    author: `Manuel Solalinde`,
   },
   plugins: [
     {
