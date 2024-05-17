@@ -6,6 +6,7 @@ This portfolio website is powered by [Gatsby](https://www.gatsbyjs.org/) and [Pr
 
 Project source files are fetched from my personal Github repository [cv](https://github.com/manolosolalinde/cv), which also holds the source markdown files of my personal [digital CV](https://manolosolalinde.github.io/), built with GitHub Pages.
 
+
 ## Setup
 
 To use with your own github cv repository and primic homepage:
