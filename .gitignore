@@ -76,3 +76,7 @@ yarn-error.log
 package-lock.json
 
 .vscode
+
+.serena
+.playwright*
+
