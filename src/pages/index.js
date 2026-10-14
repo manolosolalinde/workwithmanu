@@ -215,7 +215,8 @@ export default ({ data }) => {
     const projects = data.allGithubFile.nodes.sort((a, b) => {
         const af = a.childMarkdownRemark.frontmatter;
         const bf = b.childMarkdownRemark.frontmatter;
-        return af.order - bf.order;
+        // Equal orders: newest project first
+        return (af.order - bf.order) || String(bf.date || "").localeCompare(String(af.date || ""));
     });
     const meta = data.site.siteMetadata;
 
@@ -248,6 +249,7 @@ export const query = graphql`
                     description
                     order
                     category
+                    date
                 }
             }
             user
